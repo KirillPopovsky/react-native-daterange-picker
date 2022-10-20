@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 6,
     marginLeft: 8,
+    marginVertical: 4,
   },
   buttonText: {
     fontSize: 12,

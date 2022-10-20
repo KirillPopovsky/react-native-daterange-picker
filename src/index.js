@@ -427,7 +427,7 @@ const DateRangePicker = ({
               )}
               {weeks}
             </View>
-            {renderPresets && renderPresets()}
+            {renderPresets && <View style={mergedStyles.buttonContainer}>{renderPresets()}</View>}
             {presetButtons && (
               <>
                 <View style={mergedStyles.buttonContainer}>
