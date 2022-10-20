@@ -39,6 +39,7 @@ const DateRangePicker = ({
   buttonTextStyle,
   presetButtons,
   open,
+  renderPresets,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [weeks, setWeeks] = useState([]);
@@ -426,6 +427,7 @@ const DateRangePicker = ({
               )}
               {weeks}
             </View>
+            {renderPresets && renderPresets()}
             {presetButtons && (
               <>
                 <View style={mergedStyles.buttonContainer}>
